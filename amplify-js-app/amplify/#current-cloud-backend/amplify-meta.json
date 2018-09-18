@@ -1,0 +1,32 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplifyjsapp-20180918141009-authRole",
+			"UnauthRoleArn": "arn:aws:iam::832164682569:role/amplifyjsapp-20180918141009-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::832164682569:role/amplifyjsapp-20180918141009-authRole",
+			"Region": "ap-northeast-1",
+			"DeploymentBucketName": "amplifyjsapp-20180918141009-deployment",
+			"UnauthRoleName": "amplifyjsapp-20180918141009-unauthRole",
+			"StackName": "amplifyjsapp-20180918141009",
+			"StackId": "arn:aws:cloudformation:ap-northeast-1:832164682569:stack/amplifyjsapp-20180918141009/1d2ed510-bb01-11e8-a4a4-500c596c228e"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifyjsapp-20180918141009-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-09-18T05:17:44.435Z",
+			"output": {
+				"S3BucketSecureURL": "https://amplifyjsapp-20180918141542--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://amplifyjsapp-20180918141542--hostingbucket.s3-website-ap-northeast-1.amazonaws.com",
+				"Region": "ap-northeast-1",
+				"HostingBucketName": "amplifyjsapp-20180918141542--hostingbucket"
+			},
+			"lastPushDirHash": "Uj8hJ1fIEA9BJa3DxcMBKalHp2o="
+		}
+	}
+}
