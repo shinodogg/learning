@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Header} from 'semantic-ui-react';
+
+import { Authenticator, Greetings } from 'aws-amplify-react';
+
+import { Instagram } from 'a-theme-react';
 
 export default class Login extends Component {
     render() {
-        return (
-            <div id="login-module">
-                <Header as="h1">Login</Header>
-            </div>
-        );
+        return <Authenticator theme={Instagram} hide={[Greetings]} />
     }
 }
